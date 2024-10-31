@@ -1,47 +1,34 @@
-# Getting Started with Create React App
+Application Setup and Usage Guide
+This application has two components: a server and a client. The client supports both mobile and desktop views, and features a protected route system using a sessionId stored in localStorage. Additionally, filters for groups and providers can be reset independently.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Setup Instructions
+1. Install Dependencies
+Server:
 
-## Available Scripts
+Navigate to the server directory and install the required modules:
+bash
+Copy code
+yarn
+Client:
 
-In the project directory, you can run:
+Navigate to the client directory and install the dependencies:
+bash
+Copy code
+yarn
+2. Run the Application
+Server:
 
-### `npm start`
+Start the server by running:
+bash
+Copy code
+node server.js
+Client:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# finnplay
+Start the client by running:
+bash
+Copy code
+yarn start
+3. Application Features
+Responsive Design: The client provides an optimal experience across both mobile and desktop views.
+Protected Routes: The application uses a sessionId (stored in localStorage) to control access to protected routes.
+Filter Reset: The filters for groups and providers can be reset independently for flexibility in data filtering.
