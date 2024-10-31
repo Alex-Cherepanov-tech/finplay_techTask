@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background: #fdfdfd;
+  border-bottom: 1px solid #8080801a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1250px;
+  background: #fdfdfd;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.logoutButton {
+  background: #fdfdfd;
+  color: #ec4466;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+  }
+}

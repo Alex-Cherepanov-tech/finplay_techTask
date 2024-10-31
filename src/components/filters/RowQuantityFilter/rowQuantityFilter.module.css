@@ -1,0 +1,61 @@
+.columnCounter-slider {
+  width: 90%; /* Ширина контейнера */
+  margin-bottom: 20px; /* Центрирование */
+  text-align: center;
+}
+
+.columnCounter-circle {
+  border-radius: 50%; /* Круглая кнопка */
+  width: 50px; /* Ширина кнопки */
+  height: 50px; /* Высота кнопки */
+}
+
+.columnCounter-with-line {
+  padding: 10px 20px; /* Отступы для обычных кнопок */
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15px; /* Высота полосы */
+  background-color: #e0e0e0; /* Цвет фона полосы */
+  border-radius: 10px; /* Радиус для углов полосы */
+
+  width: 348px; /* Ширина полосы */
+}
+
+.ball {
+  width: 24px; /* Ширина шарика */
+  height: 24px; /* Высота шарика */
+  background-color: #e0e0e0; /* Цвет фона шарика */
+  border-radius: 50%; /* Шарик */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 1;
+  color: #2b2b2b;
+}
+
+.ball.active {
+  background-color: #fdbc11;
+}
+
+.filler {
+  border-top-left-radius: 27%;
+  border-bottom-left-radius: 27%;
+  height: 100%;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: width 0.3s;
+}
+
+.filler.active {
+  background-color: #fdbc11;
+}
